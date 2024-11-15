@@ -44,7 +44,7 @@
   
   .trending-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     margin-top: 20px;
   }

@@ -9,7 +9,7 @@ const Dashboard = () => {
     navigate('/explore');
   };
 
-  // Array of 12 real image links for the trending section
+
   const trendingImages = [
     'https://images.unsplash.com/photo-1521747116042-5a810fda9664',
     'https://images.unsplash.com/photo-1603994237900-d69d0e035f2d',

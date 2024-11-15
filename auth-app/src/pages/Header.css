@@ -1,0 +1,33 @@
+
+
+.header {
+    padding: 4px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    z-index: 10;
+    
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+  }
+  
+  nav li {
+    display: inline;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  

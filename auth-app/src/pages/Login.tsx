@@ -8,12 +8,10 @@ const Login = () => {
     const navigate = useNavigate();
     useForm(); 
 
-    // WebSocket state for connection
     const [socket, setSocket] = useState<WebSocket | null>(null);
 
-    // Initialize WebSocket connection and set up notification listener
     useEffect(() => {
-        const ws = new WebSocket('wss://echo.websocket.org'); // Replace with your WebSocket server URL
+        const ws = new WebSocket('wss://echo.websocket.org'); 
         setSocket(ws);
 
         ws.onopen = () => {
@@ -24,7 +22,6 @@ const Login = () => {
             try {
                 const data = JSON.parse(event.data);
                 if (data.type === 'notification') {
-                    // Display incoming notifications
                     message.info(`Notification: ${data.message}`);
                 }
             } catch (err) {
@@ -40,7 +37,6 @@ const Login = () => {
             console.log('WebSocket connection closed');
         };
 
-        // Cleanup on component unmount
         return () => {
             ws.close();
         };
@@ -52,7 +48,7 @@ const Login = () => {
                 type: 'login-request',
                 payload: values,
             };
-            socket.send(JSON.stringify(loginData)); // Send login data via WebSocket
+            socket.send(JSON.stringify(loginData)); 
         } else {
             message.error('WebSocket connection not established. Please try again later.');
         }

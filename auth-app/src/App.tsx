@@ -1,7 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
-import About from './pages/About';
 import Cart from './pages/Cart';
+import ChatApp from './pages/ChatApp';
 import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
 import Explore from './pages/Explore';
@@ -14,9 +14,10 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} /> 
             <Route path="/explore" element={<Explore />} /> 
-            <Route path="/about" element={<About />} /> 
             <Route path="/contact" element={<Contact />} /> 
             <Route path="/cart" element={<Cart />} /> 
+            {/* <Route path="/chat" element={<ChatPage />} /> */}
+            <Route path="/chat" element={<ChatApp />} />
         </Routes>
     );
 };

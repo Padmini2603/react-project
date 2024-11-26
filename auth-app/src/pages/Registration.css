@@ -38,3 +38,68 @@ h2 {
     background-color: #45a049;
     border-color: #45a049;
 }
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.captcha-challenge {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn {
+    width: 100%;
+}
+/* Registration.css */
+.registration-page {
+    font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.captcha-challenge {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.captcha-label {
+    font-weight: bold;
+}
+
+.captcha-text {
+    color: #007bff;
+    font-style: italic;
+}
+
+button {
+    margin-top: 10px;
+}
+
+input {
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

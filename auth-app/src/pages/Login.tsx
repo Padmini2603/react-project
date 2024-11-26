@@ -1,11 +1,11 @@
 import { useForm } from '@refinedev/core';
 import { Button, Form, Input, message } from 'antd';
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
     const navigate = useNavigate();
+<<<<<<< Updated upstream
     useForm(); 
 
     const [socket, setSocket] = useState<WebSocket | null>(null);
@@ -52,6 +52,13 @@ const Login = () => {
         } else {
             message.error('WebSocket connection not established. Please try again later.');
         }
+=======
+    useForm();
+
+    const handleFinish = (values: { email: string; password: string }) => {
+        message.success('Login successful');
+        navigate('/dashboard'); 
+>>>>>>> Stashed changes
     };
 
     return (
